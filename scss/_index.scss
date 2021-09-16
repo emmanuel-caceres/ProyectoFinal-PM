@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: $coloracentos;
+}
+
+header{
+
+    .menuProyecto{
+        padding-left: 20px;
+        width: 100%;
+        margin-bottom: 30px;
+
+        div{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        &__a{
+            color: white;
+            text-decoration: none;
+            transition: all 0.5s;
+            margin: 20px;
+
+            &:hover{
+                font-weight: bolder;
+            }
+        }
+    }
+}
+
+.subtituloh2{
+    font-size: 26px;
+    margin-top: 20px;
+    color: white;
+}
+
+h1{
+    color: white;
+    margin-top: 30px;
+}
+
+h3{
+    font-size: 55px;
+    color: white;
+    font-weight: bolder;
+}
+
+h4{
+    font-size: 22px;
+    margin-top: 20px;
+    font-weight: bolder;
+    color: white;
+}
+
+h5{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+@mixin persona ($bgcolor) {
+    background-color: $bgcolor;
+    margin-top: 50px;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba($color: #000000, $alpha: 0.3);
+}
+
+.persona01{
+    @include persona ($colorsecundario);
+}
+
+.persona02{
+    @include persona (#fec829);
+}
+
+.alingColumna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fotoPersona{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    img{
+        width: 60%;
+    }
+}
+
+.resumen01{
+    background-color: $coloracentos;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 60px;
+}
+
+.textResumen{
+    font-size: 20px;
+    color: white;
+}
+
+footer{
+    background-color: $coloroscuro;
+    margin-top: 50px;
+    padding: 30px 30px;
+
+    ul{
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        margin-top: 5px;
+    }
+}
+
+.row{
+    margin: 0;
+}
