@@ -1,0 +1,30 @@
+.rowAcordeon{
+    display: flex;
+    justify-content: space-between;
+}
+
+.acordeonMVP{
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 8px rgba($color: #000000, $alpha: 0.4);
+}
+
+.backlog{
+    height: 300px;
+    overflow-y: scroll;
+    border-radius: 5px;
+    box-shadow: 5px 5px 8px rgba($color: #000000, $alpha: 0.4);
+    
+    .backlogItem{
+        background-color: #ffffff;
+        padding: 10px 0px 0px 25px;
+        border-bottom: solid 1px rgb(204, 202, 202);
+
+        &:hover{
+            background-color: $colorprimario;
+            color: white;
+            font-weight: bolder;
+        }
+    }
+}
