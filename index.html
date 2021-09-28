@@ -50,20 +50,20 @@
     </header>
 
     <div class="burbujas">
-        <a href="#problema" class="desaparece-md">Problema</a>
-        <a href="#problema" class="aparece-md">P</a>
+        <a href="#problema" class="desaparece-md menuLateral">Problema</a>
+        <a href="#problema" class="aparece-md menuLateral">P</a>
 
-        <a href="#persona01" class="desaparece-md">User Persona</a>
-        <a href="#persona01" class="aparece-md">P</a>
+        <a href="#persona01" class="desaparece-md menuLateral">User Persona</a>
+        <a href="#persona01" class="aparece-md menuLateral">P</a>
 
-        <a href="#mvp" class="desaparece-md">MVP</a>
-        <a href="#mvp" class="aparece-md">P</a>
+        <a href="#mvp" class="desaparece-md menuLateral">MVP</a>
+        <a href="#mvp" class="aparece-md menuLateral">P</a>
     </div>
 
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="text-center subtituloh2" id="problema">Presentación</h2>
+                <h1 class="text-center subtituloh2 mb-5" id="problema">Presentación</h1>
                 <i class="fas fa-address-card"></i>
                 <i class="fas fa-fish"></i>
             </div>
@@ -75,8 +75,8 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6">
-                <h4>Problema</h4>
-                <p>
+                <h2 class="text-center mb-4">Problema</h2>
+                <p class="font20px">
                     Ante la necesidad de cada equipo de trabajar parcialmente de forma presencial en las oficinas, es
                     necesario llevar un control de las personas que asisten a las mismas, así como asignarles un puesto
                     de trabajo para respetar los protocolos vigentes.
@@ -84,17 +84,20 @@
             </div>
 
             <div class="col-12 col-md-6">
-                <h4>Objetivos</h4>
-                <p>Resolver la asignación y reserva de puestos de trabajo físicos dentro de una oficina para que se
+                <h2 class="text-center mb-4">Objetivos</h2>
+                <p class="font20px">Resolver la asignación y reserva de puestos de trabajo físicos dentro de una oficina para que se
                     respeten los protocolos sanitarios. Teniendo en cuenta que la nómina de empleados a presentar a la
                     oficina varía todos los días en base a las necesidades de cada equipo. Adicionalmente se gestionará
                     el uso de salas de reuniones o espacios de trabajo comunes.</p>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-12">
-                <h4>Solución</h4>
+    </div>
+
+    <div class="container-fluid mt-5 contSolucion">
+        <div class="row rowSolucion">
+            <div class="col-10">
+                <h3>Solución</h3>
                 <p>Se desarrollará una aplicación mobile donde cada empleado podrá ver la disposición de puestos de
                     trabajo en la oficina y reservar uno de estos ya sea para él o para su equipo.
                     Dicha aplicación bloqueará la reserva de los puestos de trabajo que rodean el lugar seleccionado
@@ -117,6 +120,7 @@
                 <div class="fotoPersona">
                     <img src="imagenes/persona01.png" alt="persona 01" class="img-fluid">
                 </div>
+                <h3 class="text-center text-white aparece-md">Federico Martínez</h3>
                 <div>
                     <h4>Detalles Personales</h4>
                     <ul>
@@ -139,7 +143,7 @@
             </div>
             <div class="col-12 col-md-6 alingColumna">
                 <div>
-                    <h3 class="text-end">Federico Martínez</h3>
+                    <h3 class="text-end text-white desaparece-md">Federico Martínez</h3>
                     <h4>Comportamiento</h4>
 
                     <ul>
@@ -197,7 +201,7 @@
                 <div class="fotoPersona">
                     <img src="imagenes/persona02.png" alt="persona 02" class="img-fluid">
                 </div>
-
+                <h3 class="text-center text-white aparece-md">Laura Fernandez Iraola</h3>
                 <div>
                     <h4>Detalles Personales</h4>
 
@@ -226,7 +230,7 @@
 
             <div class="col-12 col-md-6 alingColumna">
                 <div>
-                    <h3 class="text-end">Laura Fernandez Iraola</h3>
+                    <h3 class="text-end text-white desaparece-md">Laura Fernandez Iraola</h3>
                     <h4>Comportamiento</h4>
 
                     <ul>
@@ -278,7 +282,7 @@
         </div>
     </div>
 
-    <div class="container mt-5" id="mvp">
+    <div class="container-fluid mt-5" id="mvp">
         <div class="row">
             <div class="col-12">
                 <h3 class="text-center mb-5 mt-5"> MVP + Backlog</h3>
@@ -349,6 +353,9 @@
                         <p>Visualización de asistentes a la oficina</p>
                     </div>
                     <div class="backlogItem">
+                        <p>Visualización de quienes tiene reservas del equipo de trabajo</p>
+                    </div>
+                    <div class="backlogItem">
                         <p>Reporte Mensual de ocupación de puestos de trabajo</p>
                     </div>
                     <div class="backlogItem">
@@ -362,6 +369,12 @@
                     </div>
                     <div class="backlogItem">
                         <p>Notificaciones</p>
+                    </div>
+                    <div class="backlogItem">
+                        <p>Grafico Horarios o días de mayor concurrencia</p>
+                    </div>
+                    <div class="backlogItem">
+                        <p>Control para evitar reservas repetidas</p>
                     </div>
                 </div>
             </div>

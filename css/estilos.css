@@ -3,43 +3,59 @@
   padding: 0;
   font-family: 'Lato', sans-serif; }
 
-body {
-  background-color: #ee6c4d; }
+header {
+  background-color: #293241; }
+  header .menuProyecto {
+    padding-left: 20px;
+    width: 100%;
+    margin-bottom: 30px; }
+    header .menuProyecto div {
+      display: flex;
+      justify-content: space-around; }
+    header .menuProyecto__a {
+      color: white;
+      text-decoration: none;
+      transition: all 0.5s;
+      margin: 20px; }
+      header .menuProyecto__a:hover {
+        font-weight: bolder; }
 
-header .menuProyecto {
-  padding-left: 20px;
-  width: 100%;
-  margin-bottom: 30px; }
-  header .menuProyecto div {
-    display: flex;
-    justify-content: space-around; }
-  header .menuProyecto__a {
-    color: white;
-    text-decoration: none;
-    transition: all 0.5s;
-    margin: 20px; }
-    header .menuProyecto__a:hover {
-      font-weight: bolder; }
+.contSolucion {
+  padding: 0px; }
+
+.rowSolucion {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px; }
+  .rowSolucion h3 {
+    color: #3d5a80;
+    text-align: center;
+    margin: 60px 0px 60px 0px; }
+  .rowSolucion p {
+    margin-bottom: 60px;
+    font-size: 20px;
+    text-align: center; }
 
 .subtituloh2 {
   font-size: 26px;
-  margin-top: 20px;
-  color: white; }
+  margin-top: 20px; }
+
+.font20px {
+  font-size: 20px;
+  text-align: center; }
 
 h1 {
-  color: white;
   margin-top: 30px; }
 
 h3 {
   font-size: 55px;
-  color: white;
   font-weight: bolder; }
 
 h4 {
   font-size: 22px;
   margin-top: 20px;
-  font-weight: bolder;
-  color: white; }
+  font-weight: bolder; }
 
 h5 {
   font-size: 14px;
@@ -83,7 +99,6 @@ h5 {
 
 footer {
   background-color: #293241;
-  margin-top: 50px;
   padding: 30px 30px; }
   footer ul {
     list-style: none; }
@@ -94,6 +109,10 @@ footer {
 
 .row {
   margin: 0; }
+
+#mvp {
+  background-color: #ee6c4d;
+  padding-bottom: 100px; }
 
 .rowAcordeon {
   display: flex;
@@ -123,7 +142,7 @@ footer {
   h3 {
     font-size: 40px; } }
 
-.desaparece-md, .aparece-md {
+.menuLateral {
   background-color: #3d5a80;
   margin: 5px 0px;
   padding: 5px 5px;
