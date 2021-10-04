@@ -1,0 +1,22 @@
+.contSolucion{
+    padding: 0px;
+}
+
+.rowSolucion{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+    h3{
+        color: $colorprimario;
+        text-align: center;
+        margin: 60px 0px 60px 0px;
+    }
+
+    p{
+        margin-bottom: 60px;
+        font-size: 20px;
+        text-align: center;
+    }
+}

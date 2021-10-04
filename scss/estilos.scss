@@ -1,6 +1,10 @@
 @import 'variables';
 @import 'index';
+@import 'problema';
+@import 'userPersonas';
+@import 'mercado'; 
 @import 'acordeonMVP';
+@import 'brief';
 @import 'medias';
 
 .burbujas{
@@ -9,14 +13,16 @@
     top: 60px;
     display: flex;
     flex-direction: column;
+    z-index: 999;
 
     a{
-        transition: all 0.5s;
+        transition: all 0.3s;
     }
 
     a:hover{
-        transform: scale(1.1);
         color: white;
+        margin: 10px 0px 10px 0px;
+        font-weight: bolder;
     }
 
     img{
@@ -24,3 +30,4 @@
         margin-top: 20px;
     }
 }
+

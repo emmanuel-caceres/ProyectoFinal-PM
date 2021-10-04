@@ -24,32 +24,9 @@ header{
             margin: 20px;
 
             &:hover{
-                font-weight: bolder;
+                color: $coloracentos;
             }
         }
-    }
-}
-
-.contSolucion{
-    padding: 0px;
-}
-
-.rowSolucion{
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-
-    h3{
-        color: $colorprimario;
-        text-align: center;
-        margin: 60px 0px 60px 0px;
-    }
-
-    p{
-        margin-bottom: 60px;
-        font-size: 20px;
-        text-align: center;
     }
 }
 
@@ -83,50 +60,6 @@ h4{
 h5{
     font-size: 14px;
     margin-top: 10px;
-}
-
-@mixin persona ($bgcolor) {
-    background-color: $bgcolor;
-    margin-top: 50px;
-    padding: 0;
-    border-radius: 10px;
-    box-shadow: 10px 10px 15px rgba($color: #000000, $alpha: 0.3);
-}
-
-.persona01{
-    @include persona ($colorsecundario);
-}
-
-.persona02{
-    @include persona (#fec829);
-}
-
-.alingColumna{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.fotoPersona{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-
-    img{
-        width: 60%;
-    }
-}
-
-.resumen01{
-    background-color: $coloracentos;
-    border-radius: 10px;
-    padding: 15px;
-    margin-top: 60px;
-}
-
-.textResumen{
-    font-size: 20px;
-    color: white;
 }
 
 footer{
