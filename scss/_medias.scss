@@ -2,6 +2,19 @@
     h3{
         font-size: 40px;
     }
+
+    .pov{
+        flex-direction: column;
+
+        img{
+            margin: 0%;
+            margin-bottom: 20px;
+        }
+
+        p{
+            text-align: center;
+        }
+    }
 }
 
 .menuLateral{
@@ -36,5 +49,21 @@
     .carTiempos{
         padding-bottom: 50px;
     }
+
+    .amenazas, .fortalezas, .debilidades, .oportunidades{
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .tam, .sam, .som {
+        h3{
+            font-size: 20px;
+        }
+    }
+}
+    
+
 
