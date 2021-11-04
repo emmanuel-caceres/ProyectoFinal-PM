@@ -20,3 +20,19 @@
         text-align: center;
     }
 }
+
+// Mision Vision Proposito
+
+.contMision{
+    
+    padding: 10px;
+    display: flex;
+
+    div {
+        background-color: $coloroscuro;
+        padding: 20px 10px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 8px rgba($color: #000000, $alpha: 0.4);
+        color: white;
+    }
+}

@@ -55,49 +55,6 @@
     background-color: $coloracentos;
 }
 
-// Mision Vision Proposito
-
-.contMision{
-    
-    padding: 10px;
-    display: flex;
-
-    div {
-        background-color: $coloroscuro;
-        padding: 20px 10px;
-        border-radius: 10px;
-        box-shadow: 5px 5px 8px rgba($color: #000000, $alpha: 0.4);
-        color: white;
-    }
-}
-
-// POV
-
-.pov{
-
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-    background-color: $colorprimario;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 8px rgba($color: #000000, $alpha: 0.4);
-
-    img{
-        width: 90px;
-        height: 90px;
-        box-shadow: 5px 5px 8px rgba($color: #000000, $alpha: 0.4);
-        border-radius: 45px;
-        margin-right: 30px;
-    }
-
-    p{
-        color: white;
-        font-size: 20px;
-    }
-    
-}
-
 // FODA
 
 #foda{
@@ -179,53 +136,5 @@
         .h4som{
         font-size: 90%;
         }
-    }
-}
-
-// Encuesta
-
-.usuariosEncuestados{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-
-.imgEncuesta{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    img{
-        width: 80%;
-    }
-}
-
-.encuesta{
-    background-color: $coloroscuro;
-    margin-top: 30px;
-    color: white;
-    padding: 50px 0px;
-}
-
-// Mapa Perceptual
-
-.mapaPerceptual{
-    background-color: $coloroscuro;
-    color: white;
-    margin-top: 60px;
-    padding-bottom: 40px;
-}
-
-// Titulo
-
-.titulo{
-    background-color: $coloroscuro;
-    margin-bottom: 50px;
-    padding-top: 50px;
-
-    h1{
-        color: white;
-
     }
 }

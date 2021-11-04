@@ -15,7 +15,7 @@ header {
       color: white;
       text-decoration: none;
       transition: all 0.5s;
-      margin: 20px; }
+      margin: 15px; }
       header .menuProyecto__a:hover {
         color: #ee6c4d; }
 
@@ -73,6 +73,16 @@ footer {
     font-size: 20px;
     text-align: center; }
 
+.contMision {
+  padding: 10px;
+  display: flex; }
+  .contMision div {
+    background-color: #293241;
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.4);
+    color: white; }
+
 .persona01 {
   background-color: #98c1d9;
   margin-top: 50px;
@@ -108,6 +118,24 @@ footer {
 .textResumen {
   font-size: 20px;
   color: white; }
+
+.pov {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: #3d5a80;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.4); }
+  .pov img {
+    width: 90px;
+    height: 90px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 45px;
+    margin-right: 30px; }
+  .pov p {
+    color: white;
+    font-size: 20px; }
 
 #mercado {
   margin-top: 70px;
@@ -187,34 +215,6 @@ footer {
 
 .tiempos {
   background-color: #ee6c4d; }
-
-.contMision {
-  padding: 10px;
-  display: flex; }
-  .contMision div {
-    background-color: #293241;
-    padding: 20px 10px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.4);
-    color: white; }
-
-.pov {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-  background-color: #3d5a80;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.4); }
-  .pov img {
-    width: 90px;
-    height: 90px;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.4);
-    border-radius: 45px;
-    margin-right: 30px; }
-  .pov p {
-    color: white;
-    font-size: 20px; }
 
 #foda {
   margin-bottom: 60px; }
@@ -302,6 +302,85 @@ footer {
   .titulo h1 {
     color: white; }
 
+.inversionInicial {
+  background-color: #ee6c4d;
+  padding: 20px;
+  border-radius: 30px;
+  color: white; }
+
+.grillaInversionInicial {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: repeat(6, 25px); }
+  .grillaInversionInicial h5 {
+    font-weight: bolder; }
+
+.align-items-center h4 {
+  font-size: 18px; }
+
+.align-items-center a {
+  color: white;
+  margin-left: 20px;
+  margin-top: 8px; }
+  .align-items-center a:hover {
+    font-weight: bolder; }
+
+.grillaModelo {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr 2fr 2fr;
+  grid-template-rows: 230px 180px 230px;
+  grid-template-areas: "sociosClave actividadesClave propuestaValor propuestaValor relacionClientes segmento" "sociosClave recursosClave propuestaValor propuestaValor canales segmento" "costos costos costos fuentesIngresos fuentesIngresos fuentesIngresos";
+  text-align: center; }
+
+.sociosClave {
+  grid-area: sociosClave;
+  border: 1px solid black; }
+  .sociosClave div {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+
+.actividadesClave {
+  grid-area: actividadesClave;
+  border: 1px solid black; }
+
+.propuestaValor {
+  grid-area: propuestaValor;
+  border: 1px solid black; }
+
+.recursosClave {
+  grid-area: recursosClave;
+  border: 1px solid black; }
+
+.relacionClientes {
+  grid-area: relacionClientes;
+  border: 1px solid black; }
+
+.canales {
+  grid-area: canales;
+  border: 1px solid black; }
+
+.segmento {
+  grid-area: segmento;
+  border: 1px solid black; }
+  .segmento div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
+.costos {
+  grid-area: costos;
+  border: 1px solid black; }
+
+.fuentesIngresos {
+  grid-area: fuentesIngresos;
+  border: 1px solid black; }
+
+#pValor {
+  background-color: #293241; }
+
 @media (max-width: 450px) {
   h3 {
     font-size: 40px; }
@@ -311,7 +390,11 @@ footer {
       margin: 0%;
       margin-bottom: 20px; }
     .pov p {
-      text-align: center; } }
+      text-align: center; }
+  .grillaModelo {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 200px);
+    grid-template-areas: "sociosClave" "actividadesClave" "propuestaValor" "relacionClientes"  "segmento" "recursosClave" "canales" "costos" "fuentesIngresos"; } }
 
 .menuLateral {
   background-color: #3d5a80;

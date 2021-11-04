@@ -1,0 +1,162 @@
+// Encuesta
+
+.usuariosEncuestados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.imgEncuesta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img{
+        width: 80%;
+    }
+}
+
+.encuesta{
+    background-color: $coloroscuro;
+    margin-top: 30px;
+    color: white;
+    padding: 50px 0px;
+}
+
+// Mapa Perceptual
+
+.mapaPerceptual{
+    background-color: $coloroscuro;
+    color: white;
+    margin-top: 60px;
+    padding-bottom: 40px;
+}
+
+// Titulo
+
+.titulo{
+    background-color: $coloroscuro;
+    margin-bottom: 50px;
+    padding-top: 50px;
+
+    h1{
+        color: white;
+
+    }
+}
+
+// Business Case
+
+.inversionInicial{
+    background-color: $coloracentos;
+    padding: 20px;
+    border-radius: 30px;
+    color: white;
+}
+.grillaInversionInicial{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(6, 25px);
+
+    h5{
+        font-weight: bolder;
+    }
+}
+
+.align-items-center{
+    
+    h4 {
+        font-size: 18px;
+    }
+
+    a{
+        color: white;
+        margin-left: 20px;
+        margin-top: 8px;
+
+        &:hover{
+            font-weight: bolder;
+        }
+    }
+}
+
+
+// Modelo de negocio
+
+.grillaModelo{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr 2fr 2fr;
+    grid-template-rows: 230px 180px 230px;
+    grid-template-areas: 
+    "sociosClave actividadesClave propuestaValor propuestaValor relacionClientes segmento"
+    "sociosClave recursosClave propuestaValor propuestaValor canales segmento"
+    "costos costos costos fuentesIngresos fuentesIngresos fuentesIngresos";
+    text-align: center;
+}
+
+
+.sociosClave{
+    grid-area: sociosClave;
+    border: 1px solid black;
+
+    div{
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+.actividadesClave{
+    grid-area: actividadesClave;
+    border: 1px solid black;
+}
+
+.propuestaValor{
+    grid-area: propuestaValor;
+    border: 1px solid black;
+}
+
+.recursosClave{
+    grid-area: recursosClave;
+    border: 1px solid black;
+}
+
+.relacionClientes{
+    grid-area: relacionClientes;
+    border: 1px solid black;
+}
+
+.canales{
+    grid-area: canales;
+    border: 1px solid black;
+}
+
+.segmento{
+    grid-area: segmento;
+    border: 1px solid black;
+
+    div{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.costos{
+    grid-area: costos;
+    border: 1px solid black;
+}
+
+.fuentesIngresos{
+    grid-area: fuentesIngresos;
+    border: 1px solid black;
+}
+
+// Propuesta unica de Valor
+
+#pValor{
+    background-color: $coloroscuro;
+}
